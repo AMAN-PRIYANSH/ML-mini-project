@@ -1,0 +1,10 @@
+# Tested on Google Colab (Python 3.13, A100 runtime, October 2026).
+# Everything except gradio is pre-installed on Colab.
+kagglehub
+gdown
+pandas
+numpy
+scikit-learn
+xgboost>=2.0
+matplotlib
+gradio

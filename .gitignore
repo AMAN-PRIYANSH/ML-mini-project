@@ -1,0 +1,13 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.csv
+!results/*.csv
+data_clean.csv
+author_code/
+author_code.zip
+*.joblib
+*.npz
+.vscode/
+.DS_Store
+.env
