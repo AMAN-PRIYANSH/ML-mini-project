@@ -1,0 +1,7 @@
+Model,Source,Default_precision,Default_recall,Default_F1,Weighted_precision,Weighted_recall,Weighted_F1
+Logistic Regression,Paper,0.63,0.88,0.73,0.90,0.88,0.88
+Logistic Regression,Ours,0.61,0.87,0.72,0.90,0.87,0.88
+Neural Network,Paper,0.72,0.71,0.72,0.89,0.89,0.89
+Neural Network,Ours,0.72,0.65,0.68,0.88,0.89,0.88
+Random Forest,Paper,0.76,0.65,0.70,0.89,0.89,0.89
+Random Forest,Ours,0.74,0.64,0.69,0.89,0.89,0.89

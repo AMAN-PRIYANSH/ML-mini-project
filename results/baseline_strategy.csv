@@ -1,0 +1,4 @@
+Source,Split,Share_of_loans_picked,Annualized_return
+Paper,train and test,about 1.7%,about 15%
+Ours,train,1.47%,15.5%
+Ours,test,1.34%,15.2%

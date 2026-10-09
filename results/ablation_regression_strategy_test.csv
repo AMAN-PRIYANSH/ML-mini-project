@@ -1,0 +1,5 @@
+Setting,Model,Test_MSE,Test_R2,Return_top_1.7%,Return_top_5%,Return_top_10%,Return_all_loans
+S1,Random Forest depth 10,0.0355,0.287,0.151,0.132,0.119,0.000
+S1,XGBoost regressor,0.0347,0.302,0.146,0.131,0.119,0.000
+S3,Random Forest depth 10,0.0547,0.019,0.031,0.027,0.023,-0.016
+S3,XGBoost regressor,0.0537,0.037,0.038,0.037,0.034,-0.016

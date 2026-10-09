@@ -1,0 +1,7 @@
+Model,Paper_MSE,Paper_R2,Our_MSE,Our_R2
+Linear Regression,5.014,-9.494e22,0.03917,0.2160
+Ridge Regression (alpha=1),0.040,0.238,0.03911,0.2171
+Neural Network regressor,0.037,0.306,0.03739,0.2516
+Random Forest regressor depth 4,0.037,0.295,0.03659,0.2675
+Random Forest regressor depth 8,0.036,0.312,0.03592,0.2811
+Random Forest regressor depth 10,0.036,0.315,0.03591,0.2813
