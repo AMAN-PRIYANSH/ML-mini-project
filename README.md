@@ -28,6 +28,7 @@ demo_app.py                    Streamlit app for offline local demo (uses the mo
 results/                         Result tables as CSV (copied from the notebook outputs)
 figures/                         Charts used in the write-up and slides
 docs/                            Two-page write-up (PDF)
+slides/                          Review presentation (PDF, 11 slides)
 ```
 
 ## How to set up and run
@@ -61,6 +62,10 @@ streamlit run demo_app.py
 ```
 
 The Streamlit page opens on http://localhost:8501 and uses the same pre-tested loan numbers as the Gradio demo.
+
+## Slides
+
+[`slides/Lending_Club_Slides_TeamA15.pdf`](slides/Lending_Club_Slides_TeamA15.pdf) — 11-slide review deck: the paper, the baseline reproduction, the leak we found, the ablation, the honest results, and the live demo.
 
 ## Results
 
