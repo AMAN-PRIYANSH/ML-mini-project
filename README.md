@@ -23,6 +23,8 @@ Paper reproduced: Peiqian Li and Gao Han, *LendingClub Loan Default and Profitab
 01_Baseline_Reproduction.ipynb   Part 1: rebuild the paper (data, 3 classifiers, 6 regressors, strategy, comparison)
 02_Improvements.ipynb            Part 2: ablation S1/S2/S3, XGBoost, tuning, strategy re-test, charts, live demo
 requirements.txt                 Python packages (all pre-installed on Google Colab except gradio)
+03_Live_Demo.ipynb             Review demo: memory-light, works on T4 or CPU; trains honest tuned XGBoost on a 150k sample, saves model, launches Gradio with public share link
+demo_app.py                    Streamlit app for offline local demo (uses the model saved by 03_Live_Demo)
 results/                         Result tables as CSV (copied from the notebook outputs)
 figures/                         Charts used in the write-up and slides
 docs/                            Two-page write-up (PDF)
@@ -46,6 +48,19 @@ Both notebooks download the dataset themselves from Kaggle ([`wordsforthewise/le
 To run outside Colab: `pip install -r requirements.txt`. You need an NVIDIA GPU for the XGBoost cells (`device='cuda'`) and about 40 GB of RAM.
 
 The **live demo** is the last cell of `02_Improvements.ipynb`. It starts a small Gradio web page with a public link: type a loan number from the 2015 test set and see the honest model's predicted chance of default next to what really happened.
+
+## Live demo
+
+For the review, use **`03_Live_Demo.ipynb`**: it fits in free T4 Colab (12 GB RAM), trains the honest tuned XGBoost on a sample of ~150k loans in about 3 minutes, and launches a Gradio page with a public share link.
+
+The notebook also saves `demo_artifacts/` (`xgb_tuned.json` + `preproc.pkl`). Download that folder, then on your laptop:
+
+```
+pip install streamlit xgboost pandas numpy scikit-learn
+streamlit run demo_app.py
+```
+
+The Streamlit page opens on http://localhost:8501 and uses the same pre-tested loan numbers as the Gradio demo.
 
 ## Results
 
